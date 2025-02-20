@@ -33,7 +33,7 @@ function Reload() {
 
     if (hasWon[0] && hasWon[1] && hasWon[2] && hasWon[3]) {
       console.log("You won the game!");
-      document.getElementById('secret-quote').style.display = 'block';
+      document.getElementById("secret-quote").style.display = "block";
       let next = true;
       for (let j = 0; j < style1.length; j++) {
         style1[j].style.backgroundColor = "green";
@@ -52,8 +52,5 @@ function Reload() {
         style4[j].style.color = "white";
       }
     }
-
   }
 }
-
-

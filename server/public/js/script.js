@@ -62,7 +62,7 @@ function Reload() {
 }
 
 function sendScore(score) {
-  const gameKey = "your_game_key"; // Replace with your actual game key
+  const gameKey = "Louis_Hoed"; // Replace with your actual game key
   const username = "your_username"; // Replace with the actual username
 
   const data = new URLSearchParams();

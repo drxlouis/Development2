@@ -30,4 +30,8 @@ router.post("/quiz", (req: Request, res: Response): void => {
   res.render("result", { title: "Quiz resultaat", boodschap: message });
 });
 
+router.post('/game', (req: Request, res: Response): void => {
+  res.render('game', {title: 'game'});
+});
+
 export default router;

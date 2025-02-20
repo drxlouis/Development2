@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="/css/style.css" />
-        <script src="/js/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
   </head>
   <body>
     <h1>Kraak de code:</h1>
     <button class="reload-btn" onclick="Reload()">Reload</button>
     <div class="code" id="code">
-      <div class="code-box" id="code-box-1">
+      <div class="code-box box-style1" id="code-box-1">
         <p id="code-box-"></p>
       </div>
-      <div class="code-box" id="code-box-2">
+      <div class="code-box box-style2" id="code-box-2">
         <p id="code-box-"></p>
       </div>
-      <div class="code-box" id="code-box-3">
+      <div class="code-box box-style3" id="code-box-3">
         <p id="code-box-"></p>
       </div>
-      <div class="code-box" id="code-box-4">
+      <div class="code-box box-style4" id="code-box-4">
         <p id="code-box-"></p>
+      </div>
+      <div id="secret-quote" style="display: none" onclick="gameTwo()">
+        <p>Congratulations!</p>
       </div>
     </div>
-
   </body>
 </html>

@@ -1,38 +1,59 @@
 console.log("script.js loaded");
 
 const numbers = [1, 2, 3, 4];
+let hasWon = [false, false, false, false];
 
-const boxes = document.getElementById(`code-box-${numbers[0 - 3]}`);
+let next = false;
 
-const boxe1 = document.getElementById(`code-box-0`);
-const boxe2 = document.getElementById(`code-box-1`);
-const boxe3 = document.getElementById(`code-box-2`);
-const boxe4 = document.getElementById(`code-box-3`);
+const style1 = document.getElementsByClassName(`box-style1`);
+const style2 = document.getElementsByClassName(`box-style2`);
+const style3 = document.getElementsByClassName(`box-style3`);
+const style4 = document.getElementsByClassName(`box-style4`);
 
 function Reload() {
   for (let i = 0; i < numbers.length; i++) {
     const box = document.getElementById(`code-box-${numbers[i]}`);
-    if (box.innerHTML != "1") {
-      box.innerHTML = Math.floor(Math.random() * 10);
+    const styles = document.getElementsByClassName(`box-style${i + 1}`);
+    if (box.innerHTML === "1") {
+      continue;
     }
-  }
+    const randomNumber = Math.floor(Math.random() * 10);
+    box.innerHTML = randomNumber;
+    if (randomNumber === 1 && !hasWon[i]) {
+      console.log("you won");
+      hasWon[i] = true;
+    }
 
-  if (boxe1.innerHTML === "0") {
-    console.log("boxe1");
-  } else if (boxe2.innerHTML === "0") {
-    console.log("boxe2");
-  } else if (boxe3.innerHTML === "0") {
-    console.log("boxe3");
-  } else if (boxe4.innerHTML === "0") {
-    console.log("boxe4");
-  }
+    if (hasWon[i]) {
+      const styles = document.getElementsByClassName(`box-style${i + 1}`);
+      for (let j = 0; j < styles.length; j++) {
+        styles[j].style.color = "green";
+      }
+    }
 
-  if (
-    boxe1.innerHTML === "1" &&
-    boxe2.innerHTML === "1" &&
-    boxe3.innerHTML === "1" &&
-    boxe4.innerHTML === "1"
-  ) {
-    console.log("You win");
+    if (hasWon[0] && hasWon[1] && hasWon[2] && hasWon[3]) {
+      console.log("You won the game!");
+      document.getElementById('secret-quote').style.display = 'block';
+      let next = true;
+      for (let j = 0; j < style1.length; j++) {
+        style1[j].style.backgroundColor = "green";
+        style1[j].style.color = "white";
+      }
+      for (let j = 0; j < style2.length; j++) {
+        style2[j].style.backgroundColor = "green";
+        style2[j].style.color = "white";
+      }
+      for (let j = 0; j < style3.length; j++) {
+        style3[j].style.backgroundColor = "green";
+        style3[j].style.color = "white";
+      }
+      for (let j = 0; j < style4.length; j++) {
+        style4[j].style.backgroundColor = "green";
+        style4[j].style.color = "white";
+      }
+    }
+
   }
 }
+
+

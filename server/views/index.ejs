@@ -1,5 +1,43 @@
-<h2>Wat is de hoofdstad van Frankrijk?</h2>
-<form action="/quiz" method="POST">
-  <input type="text" name="antwoord" required />
-  <button type="submit">Versturen</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script>
+      const gameKey = "<%= process.env.GAME_KEY %>";
+    </script>
+    <script src="/js/script.js"></script>
+  </head>
+  <body>
+    <h1>Kraak de code:</h1>
+    <button class="reload-btn" onclick="Reload()">Reload</button>
+    <div class="code" id="code">
+      <div class="code-box box-style1" id="code-box-1">
+        <p id="code-box-1"></p>
+      </div>
+      <div class="code-box box-style2" id="code-box-2">
+        <p id="code-box-2"></p>
+      </div>
+      <div class="code-box box-style3" id="code-box-3">
+        <p id="code-box-3"></p>
+      </div>
+      <div class="code-box box-style4" id="code-box-4">
+        <p id="code-box-4"></p>
+      </div>
+    </div>
+    <div id="secret-quote" style="display: none">
+      <p>
+        Congratulations! Here is your secret quote: "The journey of a thousand
+        miles begins with one step."
+      </p>
+      <p id="tries-count"></p>
+    </div>
+    <h2>Wat is de hoofdstad van Frankrijk?</h2>
+    <form action="/quiz" method="POST">
+      <input type="text" name="antwoord" required />
+      <button type="submit">Versturen</button>
+    </form>
+  </body>
+</html>

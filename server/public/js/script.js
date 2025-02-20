@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+
 console.log("script.js loaded");
 
 const numbers = [1, 2, 3, 4];
@@ -62,8 +64,8 @@ function Reload() {
 }
 
 function sendScore(score) {
-  const gameKey = "Louis_Hoed"; // Replace with your actual game key
-  const username = "your_username"; // Replace with the actual username
+  const gameKey = "Louis_Hoed";
+  const username = "Louis";
 
   const data = new URLSearchParams();
   data.append("game_key", gameKey);

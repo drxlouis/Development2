@@ -1,71 +1,100 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
 }
 
 .code {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .code-box {
-    border: 5px solid;
-    border-radius: 10px;
-    height: auto;
-    width: 5rem;
-    height: 5rem;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  border: 5px solid;
+  border-radius: 10px;
+  height: auto;
+  width: 5rem;
+  height: 5rem;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .box-style1 {
-    border: 2px solid;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #f0f0f0;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f0f0f0;
 }
 
 .box-style2 {
-    border: 2px solid;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #f0f0f0;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f0f0f0;
 }
 
 .box-style3 {
-    border: 2px solid;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #f0f0f0;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f0f0f0;
 }
 
-
 .box-style4 {
-    border: 2px solid;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #f0f0f0;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f0f0f0;
 }
 
 .reload-btn {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-    border: 2px solid;
-    border-radius: 10px;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    margin-bottom: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav-list {
+  flex-direction: row;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
 }

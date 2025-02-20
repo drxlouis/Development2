@@ -1,5 +1,3 @@
-import dotenv from "dotenv";
-
 console.log("script.js loaded");
 
 const numbers = [1, 2, 3, 4];

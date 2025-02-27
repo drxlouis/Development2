@@ -8,26 +8,27 @@
     <script src="/js/script.js"></script>
   </head>
   <body>
-    <h1>Kraak de code:</h1>
-    <button class="reload-btn" onclick="Reload()">Reload</button>
+    <h1 class="title">Kraak de code:</h1>
+    <button class="btn" onclick="checkScore()">Submit</button>
     <div class="code" id="code">
-      <div class="code-box box-style1" id="code-box-1">
-        <p id="code-box-"></p>
+      <div onclick="one()" class="code-box box-style1" id="code-box-1">
+        <p id="number-1"></p>
       </div>
-      <div class="code-box box-style2" id="code-box-2">
-        <p id="code-box-"></p>
+      <div onclick="two()" class="code-box box-style2" id="code-box-2">
+        <p id="number-2"></p>
       </div>
-      <div class="code-box box-style3" id="code-box-3">
-        <p id="code-box-"></p>
+      <div onclick="three()" class="code-box box-style3" id="code-box-3">
+        <p id="number-3"></p>
       </div>
-      <div class="code-box box-style4" id="code-box-4">
-        <p id="code-box-"></p>
+      <div onclick="four()" class="code-box box-style4" id="code-box-4">
+        <p id="number-4"></p>
       </div>
     </div>
     <p id="tries-count"></p>
     <div id="secret-quote" style="display: none">
-      <p>Congratulations!</p>
-      <button onclick="sendScore()">Send your score...</button>
+      <p>Congratulations! Here is your secret quote: "The journey of a thousand miles begins with one step."</p>
     </div>
+
+    <div style="display: none;">Merchtem</div>
   </body>
 </html>

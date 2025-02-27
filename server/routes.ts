@@ -18,7 +18,7 @@ router.get("/game", (req: Request, res: Response): void => {
 
 // Quiz verwerken
 router.post("/quiz", (req: Request, res: Response): void => {
-  const correctAntwoord: string = "Parijs";
+  const correctAntwoord: string = "Brussel";
   const userAntwoord: string = req.body.antwoord?.trim() || "";
   const isCorrect: boolean =
     userAntwoord.toLowerCase() === correctAntwoord.toLowerCase();

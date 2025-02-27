@@ -4,6 +4,21 @@ body {
   text-align: center;
 }
 
+.title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  margin-top: 5rem;
+  color: rgb(48, 54, 65);
+}
+
+.secret-code {
+  height: 1px;
+  width: 7px;
+  border-bottom: 8px;
+  border-radius: 5px;
+  display: none;
+}
+
 .code {
   display: flex;
   flex-direction: row;
@@ -25,6 +40,9 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  background-color: rgb(48, 54, 65);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .box-style1 {
@@ -32,7 +50,6 @@ body {
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
-  background-color: #f0f0f0;
 }
 
 .box-style2 {
@@ -40,7 +57,6 @@ body {
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
-  background-color: #f0f0f0;
 }
 
 .box-style3 {
@@ -48,7 +64,6 @@ body {
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
-  background-color: #f0f0f0;
 }
 
 .box-style4 {
@@ -56,17 +71,17 @@ body {
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
-  background-color: #f0f0f0;
 }
 
-.reload-btn {
+.btn {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
   padding: 1rem;
   border: 2px solid;
   border-radius: 10px;
-  background-color: #f0f0f0;
+  background-color: rgb(48, 54, 65);
+  color: white;
   cursor: pointer;
   margin-bottom: 2rem;
 }
@@ -77,7 +92,7 @@ nav {
   align-items: center;
   gap: 2rem;
   padding: 1rem;
-  background-color: #f0f0f0;
+  background-color: rgb(48, 54, 65);
   text-decoration: none;
   align-items: center;
 }
@@ -97,4 +112,30 @@ li {
   text-decoration: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2rem;
+}
+
+.list-nav {
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.github,
+.code {
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.github a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(48, 54, 65);
 }
